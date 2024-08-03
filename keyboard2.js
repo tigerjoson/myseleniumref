@@ -14,9 +14,11 @@ async function main(){
 		await driver.switchTo().newWindow('tab');
 		//await driver.get(google_search_fig);
 		await driver.get(google_search);
-		await driver.findElement(By.className('gLFyf')).sendKeys("ecco 特價",Key.ENTER);
+		await driver.findElement(By.className('gLFyf')).sendKeys("your search string",Key.ENTER);
 		await driver.sleep(5000);
 }catch (e){
 		console.log(e)
 	}
 }
+
+main();
