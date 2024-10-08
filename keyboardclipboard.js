@@ -8,3 +8,5 @@
 	//press enter
 	await search_bar.sendKeys(Key.ENTER);
 	
+//
+ await driver.actions().keyDown(Key.SHIFT).sendKeys('a').keyUp(Key.SHIFT).sendKeys('b').perform()
